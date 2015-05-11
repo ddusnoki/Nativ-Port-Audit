@@ -1,0 +1,30 @@
+settings:
+        port_range_start: 0
+        port_range_end: 4096
+        loglevel: DEBUG
+        email: simon.szumylowicz@nativ.tv, rupert.hair@nativ.tv, carolyn.choy@nativ.tv
+        mongodb:
+                server: localhost
+                database: nativ_port_scanner
+                collection: alerts
+hosts:
+        simon-laptop:
+                ip: 10.3.3.30
+                ports: [ 22, 80 ]
+                live: no
+#        www.premierinn.com.ans1.services.nativ-systems.com:
+#                ip: 185.12.192.97
+#                ports: [ 80, 84, 85, 86, 443 ]
+#                live: yes
+#        secure.premierinn.com.whit.glb.nativ-systems.com:
+#                ip: 84.22.189.97
+#                ports: [ 80, 84, 85, 86, 443 ]
+#                live: yes
+        ns-es-fw1:
+                ip: 10.3.3.1 
+                ports: [22, 53, 80, 443]
+                live: yes
+        ns-io0-mgmt2:
+                ip: 195.24.230.111 
+                ports: [22, 80, 81, 82, 443, 444, 1984, 2381]
+                live: yes
